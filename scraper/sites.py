@@ -84,7 +84,8 @@ def parse_pdf(brand: str, model: str, url: str, content: bytes) -> list[PriceRow
     rows = []
     for p in parse_pdf_prices(content):
         words = p.trim.split()
-        while len(words) > 1 and words[0].lower() in drop:
+        # и обрывки соседнего текста вроде «до следующего изменения ПРЕСТИЖ 4.0»
+        while len(words) > 1 and (words[0].lower() in drop or re.fullmatch(r"[а-яё]+", words[0])):
             words.pop(0)
         rows.append(PriceRow(brand, model, " ".join(words), p.kind, p.price_kzt, url, p.valid_to, p.note))
     return rows
