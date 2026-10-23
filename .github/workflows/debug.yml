@@ -21,7 +21,9 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python -m scraper.debug ${{ inputs.urls }}
+      - run: python -m scraper.debug $URLS
+        env:
+          URLS: ${{ inputs.urls }}
       - name: Сохранить в ветку debug-dump
         run: |
           cd debug
