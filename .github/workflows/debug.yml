@@ -8,7 +8,7 @@ on:
         required: true
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   dump:
@@ -24,10 +24,3 @@ jobs:
       - run: python -m scraper.debug $URLS
         env:
           URLS: ${{ inputs.urls }}
-      - name: Сохранить в ветку debug-dump
-        run: |
-          cd debug
-          git init -q -b debug-dump
-          git add -A
-          git -c user.name=price-bot -c user.email=price-bot@users.noreply.github.com commit -qm "debug dump"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" debug-dump
