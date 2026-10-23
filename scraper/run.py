@@ -16,7 +16,7 @@ LATEST = DATA / "latest.csv"
 HISTORY = DATA / "history.csv"
 CHANGES = DATA / "changes.md"
 STATUS = DATA / "status.json"
-FIELDS = ["date", "brand", "model", "trim", "kind", "price_kzt", "price2_kzt", "source_url"]
+FIELDS = ["date", "brand", "model", "trim", "kind", "price_kzt", "valid_to", "note", "source_url"]
 
 log = logging.getLogger("scraper")
 
@@ -43,6 +43,25 @@ def _write(path: Path, rows: list[dict], append: bool = False):
 
 def _fmt(v) -> str:
     return f"{int(v):,}".replace(",", " ") + " ₸" if v not in (None, "") else "—"
+
+
+def _discounts(rows: list[dict], top: int = 15) -> list[str]:
+    """Самые большие скидки: акционная цена против прайсовой в той же комплектации."""
+    listed = {(r["brand"], r["model"], r["trim"]): int(r["price_kzt"]) for r in rows if r["kind"] == "прайс"}
+    found = []
+    for r in rows:
+        base = listed.get((r["brand"], r["model"], r["trim"]))
+        if r["kind"] == "акция" and base and base > int(r["price_kzt"]):
+            found.append((base - int(r["price_kzt"]), base, r))
+    if not found:
+        return []
+    found.sort(key=lambda x: -x[0])
+    out = ["## Самые большие скидки по прайсам", "",
+           "| Бренд | Модель | Комплектация | Прайс | Акция | Выгода | До |", "|---|---|---|---|---|---|---|"]
+    for diff, base, r in found[:top]:
+        out.append(f"| {r['brand']} | {r['model']} | {r['trim']} | {_fmt(base)} | {_fmt(r['price_kzt'])} "
+                   f"| {_fmt(diff)} ({diff * 100 // base}%) | {r['valid_to'] or '—'} |")
+    return out + [""]
 
 
 def main():
@@ -118,6 +137,7 @@ def main():
         lines += ["## Пропали с сайта", ""] + [f"- {r['brand']} {r['model']} {r['trim']}" for r in removed] + [""]
     if not (changed or removed or (added and previous)):
         lines += ["Изменений нет." if previous else f"Первый прогон: собрано {len(current)} строк.", ""]
+    lines += _discounts(current)
     lines += ["## Состояние сборщиков", ""]
     for brand, s in status["brands"].items():
         lines.append(f"- {brand}: " + (f"{s['rows']} строк, PDF: {s.get('pdfs', 0)}" if s["ok"]
