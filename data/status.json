@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "brands": {
+    "Hyundai": {
+      "ok": true,
+      "rows": 13,
+      "pdfs": 0,
+      "error": null
+    },
+    "Chery": {
+      "ok": true,
+      "rows": 37,
+      "pdfs": 12,
+      "error": null
+    },
+    "Haval": {
+      "ok": true,
+      "rows": 36,
+      "pdfs": 7,
+      "error": null
+    },
+    "Toyota": {
+      "ok": true,
+      "rows": 40,
+      "pdfs": 9,
+      "error": null
+    }
+  }
+}
