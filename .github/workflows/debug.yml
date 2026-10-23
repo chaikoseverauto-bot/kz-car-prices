@@ -7,6 +7,9 @@ on:
         description: "Адреса страниц через пробел"
         required: true
 
+permissions:
+  contents: write
+
 jobs:
   dump:
     runs-on: ubuntu-latest
@@ -19,7 +22,10 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python -m scraper.debug ${{ inputs.urls }}
-      - uses: actions/upload-artifact@v4
-        with:
-          name: debug-html
-          path: debug/
+      - name: Сохранить в ветку debug-dump
+        run: |
+          cd debug
+          git init -q -b debug-dump
+          git add -A
+          git -c user.name=price-bot -c user.email=price-bot@users.noreply.github.com commit -qm "debug dump"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" debug-dump
