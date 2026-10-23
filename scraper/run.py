@@ -47,6 +47,7 @@ def _fmt(v) -> str:
 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    DATA.mkdir(exist_ok=True)
     today = date.today().isoformat()
     previous = _read(LATEST)
     prev_by_brand: dict[str, list[dict]] = {}
