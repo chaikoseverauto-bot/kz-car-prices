@@ -1,4 +1,5 @@
 """Офлайн-тесты разбора: без сети, на образцах разметки."""
+import os
 import unittest
 from unittest import mock
 
@@ -79,23 +80,23 @@ class ToyotaTests(unittest.TestCase):
 
 
 class PdfTests(unittest.TestCase):
-    """Разбор на реальных прайсах из data/pdf (если они уже скачаны)."""
+    """Разбор на замороженных копиях реальных прайсов (октябрь 2026).
 
-    def _rows(self, brand, model, path):
-        import os
-        if not os.path.exists(path):
-            self.skipTest("нет файла " + path)
+    Файлы в data/pdf обновляются каждый день, поэтому тесты на них не опираются."""
+
+    def _rows(self, brand, model, name):
+        path = os.path.join(os.path.dirname(__file__), "fixtures", name)
         with open(path, "rb") as f:
             return sites.parse_pdf(brand, model, path, f.read())
 
     def test_chery_list_and_promo(self):
-        rows = self._rows("Chery", "Tiggo 4", "data/pdf/chery/tiggo-4.pdf")
+        rows = self._rows("Chery", "Tiggo 4", "chery-tiggo-4-2026-10.pdf")
         got = {(r.trim, r.kind, r.price_kzt, r.valid_to) for r in rows}
         self.assertIn(("Elite", "прайс", 7_890_000, ""), got)
         self.assertIn(("Style", "акция", 8_290_000, "2026-10-31"), got)
 
     def test_haval_stacked_header(self):
-        rows = self._rows("Haval", "M6", "data/pdf/haval/haval-m6.pdf")
+        rows = self._rows("Haval", "M6", "haval-m6-2026-10.pdf")
         got = {(r.trim, r.kind, r.price_kzt) for r in rows}
         self.assertIn(("ELITE PLUS 1.5T 2WD DCT", "акция", 9_290_000), got)
         self.assertIn(("COMFORT 1.5T 2WD MT", "прайс", 9_090_000), got)
