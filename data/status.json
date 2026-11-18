@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "brands": {
     "Hyundai": {
       "ok": true,
@@ -15,7 +15,7 @@
     },
     "Haval": {
       "ok": true,
-      "rows": 38,
+      "rows": 44,
       "pdfs": 7,
       "error": null
     },
