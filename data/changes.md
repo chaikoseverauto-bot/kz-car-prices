@@ -1,12 +1,6 @@
-# Изменения цен на 2026-11-19
+# Изменения цен на 2026-11-20
 
-## Новые позиции
-
-- Haval H7 Hybryd : 7 590 000 ₸
-- Haval H7 Hybryd TECH PLUS: 17 290 000 ₸
-- Haval H7 Hybryd ULTRA: 18 990 000 ₸
-- Haval H7 Hybryd TECH PLUS: 14 890 000 ₸
-- Haval H7 Hybryd ULTRA: 16 290 000 ₸
+Изменений нет.
 
 ## Самые большие скидки по прайсам
 
