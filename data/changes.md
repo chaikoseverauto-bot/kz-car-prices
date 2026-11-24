@@ -1,13 +1,27 @@
-# Изменения цен на 2026-11-23
+# Изменения цен на 2026-11-24
 
-Изменений нет.
+## Новые позиции
+
+- Haval H7 HYBRID : 16 290 000 ₸
+- Haval H7 HYBRID TECH PLUS: 17 290 000 ₸
+- Haval H7 HYBRID ULTRA: 18 990 000 ₸
+- Haval H7 HYBRID TECH PLUS: 14 890 000 ₸
+- Haval H7 HYBRID ULTRA: 16 290 000 ₸
+
+## Пропали с сайта
+
+- Haval H7 Hybryd 
+- Haval H7 Hybryd TECH PLUS
+- Haval H7 Hybryd ULTRA
+- Haval H7 Hybryd TECH PLUS
+- Haval H7 Hybryd ULTRA
 
 ## Самые большие скидки по прайсам
 
 | Бренд | Модель | Комплектация | Прайс | Акция | Выгода | До |
 |---|---|---|---|---|---|---|
 | Haval | H7 | ULTRA | 18 990 000 ₸ | 16 290 000 ₸ | 2 700 000 ₸ (14%) | — |
-| Haval | H7 Hybryd | ULTRA | 18 990 000 ₸ | 16 290 000 ₸ | 2 700 000 ₸ (14%) | — |
+| Haval | H7 HYBRID | ULTRA | 18 990 000 ₸ | 16 290 000 ₸ | 2 700 000 ₸ (14%) | — |
 | Haval | H9 | PREMIUM 2.0T цвет | 23 690 000 ₸ | 21 084 100 ₸ | 2 605 900 ₸ (11%) | — |
 | Haval | H6 | PREMIUM 1.5T 2WD | 12 290 000 ₸ | 9 690 000 ₸ | 2 600 000 ₸ (21%) | — |
 | Haval | H9 | PREMIUM 2.0T | 23 190 000 ₸ | 20 639 100 ₸ | 2 550 900 ₸ (11%) | — |
@@ -15,7 +29,7 @@
 | Haval | H6 | TECH 2.0T 2WD | 13 990 000 ₸ | 11 590 000 ₸ | 2 400 000 ₸ (17%) | — |
 | Haval | H6 | TECH PLUS 2.0T 2WD | 14 390 000 ₸ | 11 990 000 ₸ | 2 400 000 ₸ (16%) | — |
 | Haval | H7 | TECH PLUS | 17 290 000 ₸ | 14 890 000 ₸ | 2 400 000 ₸ (13%) | — |
-| Haval | H7 Hybryd | TECH PLUS | 17 290 000 ₸ | 14 890 000 ₸ | 2 400 000 ₸ (13%) | — |
+| Haval | H7 HYBRID | TECH PLUS | 17 290 000 ₸ | 14 890 000 ₸ | 2 400 000 ₸ (13%) | — |
 | Haval | JOLION | TECH PLUS 1.5T 4WD 7DCT | 12 390 000 ₸ | 10 035 900 ₸ | 2 354 100 ₸ (19%) | — |
 | Haval | JOLION | TECH PLUS 1.5T 2WD 7DCT | 11 690 000 ₸ | 9 468 900 ₸ | 2 221 100 ₸ (19%) | — |
 | Haval | JOLION | PREMIUM 1.5T 2WD 7DCT | 10 790 000 ₸ | 8 739 900 ₸ | 2 050 100 ₸ (19%) | — |
