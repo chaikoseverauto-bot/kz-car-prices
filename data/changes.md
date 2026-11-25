@@ -1,20 +1,20 @@
-# Изменения цен на 2026-11-24
+# Изменения цен на 2026-11-25
 
-## Новые позиции
+## Цена изменилась
 
-- Haval H7 HYBRID : 16 290 000 ₸
-- Haval H7 HYBRID TECH PLUS: 17 290 000 ₸
-- Haval H7 HYBRID ULTRA: 18 990 000 ₸
-- Haval H7 HYBRID TECH PLUS: 14 890 000 ₸
-- Haval H7 HYBRID ULTRA: 16 290 000 ₸
-
-## Пропали с сайта
-
-- Haval H7 Hybryd 
-- Haval H7 Hybryd TECH PLUS
-- Haval H7 Hybryd ULTRA
-- Haval H7 Hybryd TECH PLUS
-- Haval H7 Hybryd ULTRA
+| Бренд | Модель | Комплектация | Было | Стало | Разница |
+|---|---|---|---|---|---|
+| Toyota | LAND CRUISER 300 | ПРЕСТИЖ 4.0 | 57 190 000 ₸ | 51 920 000 ₸ | -5 270 000 ₸ |
+| Toyota | LAND CRUISER 300 | ПРЕСТИЖ OFF-ROAD ДИЗЕЛЬ | 65 990 000 ₸ | 61 010 000 ₸ | -4 980 000 ₸ |
+| Toyota | LAND CRUISER 300 | ПРЕСТИЖ ДИЗЕЛЬ | 62 390 000 ₸ | 59 280 000 ₸ | -3 110 000 ₸ |
+| Toyota | Corolla | от | 14 690 000 ₸ | 13 570 000 ₸ | -1 120 000 ₸ |
+| Toyota | LAND CRUISER 300 | от | 51 990 000 ₸ | 51 920 000 ₸ | -70 000 ₸ |
+| Toyota | LAND CRUISER 300 | ПРЕСТИЖ OFF-ROAD | 59 900 000 ₸ | 63 390 000 ₸ | +3 490 000 ₸ |
+| Toyota | LAND CRUISER 300 | ПРЕСТИЖ | 58 240 000 ₸ | 61 740 000 ₸ | +3 500 000 ₸ |
+| Toyota | LAND CRUISER 300 | ЛЮКС | 60 140 000 ₸ | 63 640 000 ₸ | +3 500 000 ₸ |
+| Toyota | LAND CRUISER 300 | GR SPORT | 62 760 000 ₸ | 66 310 000 ₸ | +3 550 000 ₸ |
+| Toyota | LAND CRUISER 300 | ПРЕМИУМ | 62 320 000 ₸ | 65 870 000 ₸ | +3 550 000 ₸ |
+| Toyota | LAND CRUISER 300 | ПРЕМИУМ+ | 64 010 000 ₸ | 67 600 000 ₸ | +3 590 000 ₸ |
 
 ## Самые большие скидки по прайсам
 
